@@ -450,7 +450,7 @@
 <h3 id="update-documentaion">Update Documentaion</h3>
 <p>Change or add a md file in the docs directory and add it to the <code>/.mkdocs.yml</code> "nav" section.</p>
 <p>If you would like this file to also appear in a specific folder of the code you can sym link it like so.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Powershell</label><label for="__tabbed_1_2">Bash</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Powershell 7.1+</label><label for="__tabbed_1_2">Bash</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">SymbolicLink</span> <span class="n">-Path</span> <span class="s2">&quot;./src/code/directory/README.md&quot;</span> <span class="n">-Target</span> <span class="s2">&quot;./docs/myInfoName.md&quot;</span>
@@ -462,6 +462,7 @@
 </div>
 </div>
 </div>
+<p>Note: powershell less then 7.1 create static symbolic links instead of reltive ones. Please use the correct version of <a href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows">powershell</a>. </p>
 <h3 id="run-documentation-site-locally">Run Documentation Site Locally</h3>
 <ol>
 <li><a href="https://www.mkdocs.org/user-guide/installation/">Install mkdocs</a></li>
