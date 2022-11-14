@@ -1,0 +1,12 @@
+site_name: Teams
+site_url: https://harmonwood.github.io/teams/
+theme:
+  name: material
+  features:
+    - content.tabs.link
+nav:
+    - Home: index.md
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
