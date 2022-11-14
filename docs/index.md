@@ -11,7 +11,7 @@ Change or add a md file in the docs directory and add it to the `/.mkdocs.yml` "
 
 If you would like this file to also appear in a specific folder of the code you can sym link it like so.
 
-=== "Powershell"
+=== "Powershell 7.1+"
     ``` powershell
     New-Item -ItemType SymbolicLink -Path "./src/code/directory/README.md" -Target "./docs/myInfoName.md"
     ```
@@ -21,6 +21,7 @@ If you would like this file to also appear in a specific folder of the code you 
     ln -s ./docs/myInfoName.md ./docs/myInfoName.md
     ```
 
+Note: powershell less then 7.1 create static symbolic links instead of reltive ones. Please use the correct version of [powershell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows). 
 ### Run Documentation Site Locally
 
 1. [Install mkdocs](https://www.mkdocs.org/user-guide/installation/)
